@@ -5,6 +5,7 @@ import { Carousel } from "react-responsive-carousel";
 import { Link } from "react-router-dom";
 import MovieList from "../../movieList/movieList";
 
+
 function Home() {
   const [popularMovies, setPopularMovies] = useState([]);
 

@@ -3,6 +3,7 @@ import Card from "../card/Card.js";
 import "./movieList.css";
 import { useParams } from "react-router-dom"; 
 
+
 const MovieList = () => {
   const [movieList, setMovieList] = useState([]);
   const { type } = useParams();
