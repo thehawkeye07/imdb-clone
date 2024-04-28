@@ -13,7 +13,7 @@ function Movie() {
 
     const getData = () => {
         fetch(
-            `https://api.themoviedb.org/3/movie/${id}?api_key=37be067c3def9a6226c600735773d1e0&language=en-US`
+            `https://api.themoviedb.org/3/movie/${id}?api_key=${process.env.API_KEY}&language=en-US`
         )
             .then((res) => res.json())
             .then((data) => setCurrentMovieDetail(data));
