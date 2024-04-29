@@ -2,7 +2,6 @@ import React, { useEffect, useState } from "react";
 import "./Movie.css";
 import { useParams } from "react-router-dom";
 
-
 function Movie() {
     const [currentMovieDetail, setCurrentMovieDetail] = useState();
     const { id } = useParams();
@@ -154,6 +153,7 @@ function Movie() {
                                             "https://image.tmdb.org/t/p/original" +
                                             company.logo_path
                                         }
+                                        alt="image_not_loaded"
                                     />
                                     <span>{company.name}</span>
                                 </span>
