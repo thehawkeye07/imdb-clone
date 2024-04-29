@@ -9,7 +9,7 @@ function Movie() {
     useEffect(() => {
         getData();
         window.scrollTo(0, 0);
-    }, []);
+    }, [getData()]);
 
     const getData = () => {
         fetch(
@@ -110,7 +110,7 @@ function Movie() {
                 {currentMovieDetail && currentMovieDetail.homepage && (
                     <a
                         href={currentMovieDetail.homepage}
-                        target="_blank"
+                        // target="_blank"
                         style={{ textDecoration: "none" }}
                     >
                         <p>
