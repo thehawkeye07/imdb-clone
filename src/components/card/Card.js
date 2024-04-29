@@ -12,6 +12,7 @@ const Card = ({ movie }) => {
             setIsLoading(false);
         }, 1500);
     }, []);
+
     return (
         <>
             {isLoading ? (
